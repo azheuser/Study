@@ -3,11 +3,10 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string input_num;
     getline(cin, input_num, '\n');
-    string str[10] = { "ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu" };
+    string str[10] = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"};
 
     if(input_num[0] == '-') {
         cout << "fu" << " ";
@@ -20,8 +19,8 @@ int main()
                 cout << str[j];
             }
         }
-        if(i < input_num.length()-1) {
-            	cout << " ";
-			}
+        if(i < input_num.length() - 1) {
+            cout << " ";
+        }
     }
 }
